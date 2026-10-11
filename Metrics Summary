@@ -1,0 +1,12 @@
+Category	Cases	Human Pass Rate	AI Judge Pass Rate	Human Avg Score	AI Judge Avg Score	Human Critical Errors	Caught by AI Judge	Missed by AI Judge	False Alarms by AI Judge	Error Detection Rate	Verdict Match Rate
+Quality Governance	8	75.0%	50.0%	7.50	7.25	1	1	0	0	100.0%	75.0%
+Cost & Supply Chain	10	50.0%	60.0%	5.10	6.10	4	3	1	0	75.0%	90.0%
+FMEA	10	70.0%	50.0%	7.60	6.60	1	1	0	1	100.0%	80.0%
+PPAP	10	60.0%	70.0%	7.80	8.30	0	0	0	0	n/a	90.0%
+STA Supplier Compliance	8	62.5%	75.0%	6.38	8.00	2	1	1	0	50.0%	87.5%
+Geopolitical & Trade Risk	10	50.0%	70.0%	6.40	6.60	2	1	1	1	50.0%	60.0%
+Total	56	60.7%	62.5%	6.79	7.11	10	7	3	2	70.0%	80.4%
+											
+Definitions: Pass = score >= threshold (Scoring Notes!B5) AND no critical error flagged. Error Detection Rate = Caught by AI Judge / Human Critical Errors (the human flag is treated as ground truth).											
+Missed = human flagged, AI judge did not. False Alarm = AI judge flagged, human did not. Verdict Match Rate = share of cases where the human and AI judge PASS/FAIL results agree.											
+All underlying scores are SIMULATED (see Scoring Notes). Use this sheet as the answer key to check SQL results.											
